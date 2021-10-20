@@ -29,28 +29,34 @@ namespace TRPO4KURS_Stetskiy_Sirotkin.Pages
 
         private void LogBut_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(TLB.Text) || string.IsNullOrEmpty(PWB.Password))
+            Auth(TLB.Text, PWB.Password);
+        }
+
+
+        public bool Auth (string Login, string Password)
+        {
+            if (string.IsNullOrEmpty(Login) || string.IsNullOrEmpty(Password))
             {
                 MessageBox.Show("Введите логин и пароль");
-                return;
+                return false;
 
 
             }
 
             using (var db = new SAVSAA_Material_storageEntities())
             {
-                var user = db.Users.AsNoTracking().FirstOrDefault(u => u.Login == TLB.Text);
+                var user = db.Users.AsNoTracking().FirstOrDefault(u => u.Login == Login);
 
                 if (user == null)
                 {
                     MessageBox.Show("Данный логин не найден");
-                    return;
+                    return false;
                 }
 
-                if (user.Password != PWB.Password)
+                if (user.Password != Password)
                 {
                     MessageBox.Show("Данный пароль неверен");
-                    return;
+                    return false;
                 }
 
                 switch (user.RoleID)
@@ -68,10 +74,9 @@ namespace TRPO4KURS_Stetskiy_Sirotkin.Pages
                         }
 
                 }
-
-            }
+                return true;
+            } 
         }
-
         private void RegBut_Click(object sender, RoutedEventArgs e)
         {
 

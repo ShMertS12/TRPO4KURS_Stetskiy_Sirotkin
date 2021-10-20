@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRPO4KURS_Stetskiy_Sirotkin", "TRPO4KURS_Stetskiy_Sirotkin\TRPO4KURS_Stetskiy_Sirotkin.csproj", "{9FFFBDD2-19B3-4D9D-8481-16DA43ADA67C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{2F2323BE-ECB1-4A5B-A3AF-9D71C19B7182}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9FFFBDD2-19B3-4D9D-8481-16DA43ADA67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FFFBDD2-19B3-4D9D-8481-16DA43ADA67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FFFBDD2-19B3-4D9D-8481-16DA43ADA67C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2323BE-ECB1-4A5B-A3AF-9D71C19B7182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2323BE-ECB1-4A5B-A3AF-9D71C19B7182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2323BE-ECB1-4A5B-A3AF-9D71C19B7182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2323BE-ECB1-4A5B-A3AF-9D71C19B7182}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

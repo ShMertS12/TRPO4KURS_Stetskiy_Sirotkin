@@ -29,29 +29,26 @@
             Grid.Column="1"
             Width="200"
             Height="200">
-            <TextBox x:Name="TLB" Style="{StaticResource TBMF}" />
-            <PasswordBox x:Name="PWB" Style="{StaticResource PBMF}" />
+            <TextBox x:Name="TLB" />
+            <PasswordBox x:Name="PWB" />
 
             <StackPanel Margin="0,10,0,0">
                 <Button
                     x:Name="LogBut"
                     Click="LogBut_Click"
                     Content="Вход"
-                    Style="{StaticResource BMF}" />
+                     />
                 <Button
                     x:Name="RegBut"
                     Click="RegBut_Click"
                     Content="Регистрация"
-                    Style="{StaticResource BMF}" />
+                    />
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1">
-            <Label Content="Логин" Style="{StaticResource ResourceKey=LMF}" />
-            <Label Content="Пароль" Style="{StaticResource ResourceKey=LMF}" />
+            <Label Content="Логин"  />
+            <Label Content="Пароль"  />
         </StackPanel>
 
     </Grid>
-    <Page.Resources>
-        <ResourceDictionary Source=""
-    </Page.Resources>
 </Page>
