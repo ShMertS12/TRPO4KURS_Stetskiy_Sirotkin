@@ -19,7 +19,8 @@ namespace TRPO4KURS_Stetskiy_Sirotkin
         public string Login { get; set; }
         public string Password { get; set; }
         public int RoleID { get; set; }
-    
+        public string Pictures { get; set; }
+        public string Photo { get { return Pictures == null? "/Cartinki/def.jpg" : "/Cartinki/" + Pictures; } }
         public virtual Role Role { get; set; }
     }
 }

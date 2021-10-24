@@ -67,6 +67,7 @@
     <Compile Include="Category.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Core.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -83,6 +84,12 @@
     </Compile>
     <Compile Include="Pages\Calc.xaml.cs">
       <DependentUpon>Calc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerMenu.xaml.cs">
+      <DependentUpon>CustomerMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UserOut.xaml.cs">
+      <DependentUpon>UserOut.xaml</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -116,6 +123,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Calc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\CustomerMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UserOut.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -169,6 +184,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Cartinki\6_xhpYWKZGA.jpg" />
+    <Resource Include="Cartinki\adoWGmrH5cM.jpg" />
+    <Resource Include="Cartinki\A0b279b0f9aa6fa25260374a3bcaa7d02ad8e749.jpg" />
+    <Resource Include="Cartinki\ct3nDgz2Bvw.jpg" />
+    <Resource Include="Cartinki\def.jpg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

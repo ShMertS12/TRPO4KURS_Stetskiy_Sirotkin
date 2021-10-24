@@ -63,13 +63,13 @@ namespace TRPO4KURS_Stetskiy_Sirotkin.Pages
                 {
                     case 2:
                         {
-                            MessageBox.Show("befsdfsdf");
+                            NavigationService?.Navigate(new CustomerMenu(user));
                             break;
                         }
 
                     case 1:
                         {
-                            MessageBox.Show("sfsafsdfsdfsfsfsfsdsffagygsdfdfsdfasdf");
+                            NavigationService?.Navigate(new CustomerMenu(user));
                             break;
                         }
 
