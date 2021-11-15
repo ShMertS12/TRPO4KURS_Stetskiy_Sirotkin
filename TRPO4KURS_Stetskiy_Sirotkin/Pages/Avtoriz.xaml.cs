@@ -79,7 +79,7 @@ namespace TRPO4KURS_Stetskiy_Sirotkin.Pages
         }
         private void RegBut_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService?.Navigate(new Regis());
         }
     }
 }

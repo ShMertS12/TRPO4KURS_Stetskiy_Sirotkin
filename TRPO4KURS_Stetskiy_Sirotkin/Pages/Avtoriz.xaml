@@ -37,12 +37,14 @@
                     x:Name="LogBut"
                     Click="LogBut_Click"
                     Content="Вход"
-                    Style="{StaticResource BMF}" />
+                    Style="{StaticResource BMF}"
+                    ToolTip="Вход в приложение" />
                 <Button
                     x:Name="RegBut"
                     Click="RegBut_Click"
                     Content="Регистрация"
-                    Style="{StaticResource BMF}" />
+                    Style="{StaticResource BMF}"
+                    ToolTip="Регистрация нового пользователя" />
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1">
