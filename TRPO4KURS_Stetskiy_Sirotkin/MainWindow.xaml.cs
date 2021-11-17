@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace TRPO4KURS_Stetskiy_Sirotkin
 {
@@ -55,6 +56,11 @@ namespace TRPO4KURS_Stetskiy_Sirotkin
             {
                 ButBack.Visibility = Visibility.Visible;
             }
+        }
+
+        private void SPBUT_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("help.chm");
         }
     }
 }

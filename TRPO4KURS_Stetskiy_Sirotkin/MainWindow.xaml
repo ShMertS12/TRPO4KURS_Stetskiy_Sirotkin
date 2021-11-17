@@ -18,9 +18,9 @@
         <Frame
             x:Name="MainFrame"
             Grid.Row="1"
-            Source="/Pages/Avtoriz.xaml"
-            NavigationUIVisibility ="Hidden"
-            Navigated="MainFrame_Navigated"/>
+            Navigated="MainFrame_Navigated"
+            NavigationUIVisibility="Hidden"
+            Source="/Pages/Avtoriz.xaml" />
 
         <StackPanel Orientation="Horizontal">
             <Button
@@ -42,6 +42,17 @@
                 Background="#FFFFFCD6"
                 Click="ButCal_Click"
                 Content="Калькулятор"
+                FontFamily="Impact" />
+            <Button
+                x:Name="SPBUT"
+                Width="75"
+                Height="25"
+                Margin="10,0,0,0"
+                HorizontalAlignment="Left"
+                Background="#FFFFFCD6"
+                Click="SPBUT_Click"
+                Content="Справка"
+                
                 FontFamily="Impact" />
             <Button
                 x:Name="ButEx"

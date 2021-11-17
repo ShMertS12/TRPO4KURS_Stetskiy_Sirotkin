@@ -31,5 +31,20 @@ namespace TRPO4KURS_Stetskiy_Sirotkin.Pages
         {
             NavigationService?.Navigate(new UserOut(CustUser));
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new Products());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new Shyip());
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new ShipDate());
+        }
     }
 }

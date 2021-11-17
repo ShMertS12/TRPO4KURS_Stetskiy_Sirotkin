@@ -15,6 +15,15 @@ namespace TRPO4KURS_Stetskiy_Sirotkin
     
     public partial class SAVSAA_Material_storageEntities : DbContext
     {
+        private static SAVSAA_Material_storageEntities _context;
+
+        public static SAVSAA_Material_storageEntities GetContext()
+        {
+            if (_context == null)
+                _context = new SAVSAA_Material_storageEntities();
+            return _context;
+        }
+
         public SAVSAA_Material_storageEntities()
             : base("name=SAVSAA_Material_storageEntities")
         {
